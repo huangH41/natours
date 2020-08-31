@@ -1,0 +1,13 @@
+// @font-face {
+//     font-family: Lato;
+//     src: url(../fonts/Lato-Black.ttf);
+//     font-weight: 900;
+// }
+
+@include include-normal-font(Lato, '../fonts/Lato-Black.ttf', 900);
+@include include-normal-font(Lato, '../fonts/Lato-Bold.ttf', 700);
+@include include-normal-font(Lato, '../fonts/Lato-Regular.ttf', 400);
+@include include-normal-font(Lato, '../fonts/Lato-Light.ttf', 300);
+@include include-normal-font(Lato, '../fonts/Lato-Thin.ttf', 100);
+
+

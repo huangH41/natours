@@ -1,0 +1,15 @@
+@mixin include-normal-font($font-family-name, $font-src, $font-weight) {
+    @font-face {
+        font-family: $font-family-name;
+        src: url($font-src);
+        font-weight: $font-weight;
+    }
+}
+
+@mixin object-position($top, $left) {
+    position: relative;
+    top: $top;
+    left: $left;
+
+    transform: translate(-50%, -50%);
+}

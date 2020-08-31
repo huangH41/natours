@@ -1,6 +1,21 @@
-@import "base/base";
+/* 
+ORDER:
+1. Abstract
+2. Vendor
+3. Base
+4. Layout
+5. Components
+6. Pages
+7. Themes
+*/
 
 @import "abstracts/util";
 @import "abstracts/variable";
+@import "abstracts/mixin";
+
+@import "base/base";
+@import "base/typography";
+
+@import "components/button";
 
 @import "pages/home";

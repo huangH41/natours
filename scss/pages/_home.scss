@@ -1,6 +1,10 @@
 .header {
-    background-color: orangered;
-    height: 90vh;
+    background-image: linear-gradient(to bottom right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)) ,url(../img/hero.jpg);
+    background-position: top;
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    height: 95vh;
+
     position: relative;
 
     &__logo {
@@ -11,7 +15,28 @@
     }
 
     &__content-box {
+        @include object-position(40%, 50%);
+
         display: inline-block;
         text-align: center;
+    }
+
+    &__headline,
+    &__sub-headline {
+        color: $color-grey-light-1;
+        text-transform: uppercase;
+    }
+
+    &__headline {
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__sub-headline {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.78rem;
     }
 }
