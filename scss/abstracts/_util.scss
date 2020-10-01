@@ -1,5 +1,13 @@
 .object {
-    &__margin-bottom--lg {
-        margin-bottom: 6rem;
-    }
+    &__margin-bottom--xl { margin-bottom: 8rem; }
+
+    &__margin-bottom--lg { margin-bottom: 6rem; }
+
+    &__margin-bottom--md { margin-bottom: 4rem; }
+
+    &__margin-bottom--sm { margin-bottom: 2rem; }
+}
+
+.text {
+    &__align--justify { text-align: justify; }
 }

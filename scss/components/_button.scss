@@ -44,3 +44,11 @@
         transition: all .4s;
     }
 }
+
+.link-button {
+    align-self: flex-start;
+    font-size: $regular-font-size;
+    color: $color-primary;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $color-primary;
+}
