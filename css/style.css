@@ -96,7 +96,7 @@ a {
 
 .paragraph {
   font-size: 1.6rem;
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
 .button, .button:link, .button:visited {
@@ -138,6 +138,34 @@ a {
   color: #55c57a;
   padding-bottom: 4px;
   border-bottom: 1px solid #55c57a;
+}
+
+.simple-card {
+  background-color: rgba(247, 247, 247, 0.85);
+  text-align: center;
+  padding: 2.5rem 3rem;
+  border-radius: 4px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  /* 
+  this make the flex item grow occupy the same space with its sibling, combined with
+  flex basis 0, it makes the flex item width is purely depend on flex grow result
+  which in the end make all the flex item width same with each of their siblings
+  */
+  flex: 1 0 0px;
+}
+.simple-card__icon {
+  padding: 2rem 0;
+  font-size: 7.2rem;
+  color: transparent;
+  background-image: linear-gradient(to bottom right, #7ed56f, #28b485);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.simple-card__body {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.5;
+  color: #999;
 }
 
 .header {
@@ -224,6 +252,22 @@ a {
   left: 50%;
   top: 10rem;
   transform: translateX(-50%);
+}
+
+.benefit {
+  padding: 32rem 8rem;
+  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+  transform: translateY(-17%);
+}
+.benefit__list {
+  display: flex;
+  justify-content: space-between;
+}
+.benefit__list > *:not(:last-child) {
+  margin-right: 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

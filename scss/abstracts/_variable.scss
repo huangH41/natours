@@ -19,9 +19,19 @@ $color-grey-dark-3: #333;
 $color-white: #fff;
 $color-black: #000;
 
+//GRADIENT COLOR
+$primary-gradient-color: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+$bg-primary-color: linear-gradient(to bottom right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8));
+
 //FONT
 $regular-font-size: 1.6rem;
 
-
 //SHADOW
 $regular-box-shadow: 0 8px 28px rgba($color-black, .4);
+$small-box-shadow: 0 8px 20px rgba($color-black, .1);
+
+//GRID GUTTER
+$grid-gutter: 6rem;
+
+//BORDER RADIUS
+$border-rad-sm: 4px;
