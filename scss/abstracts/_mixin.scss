@@ -13,3 +13,8 @@
 
     transform: translate(-50%, -50%);
 }
+
+@mixin add-vertical-padding($top-padding, $bottom-padding) {
+    padding-top: $top-padding;
+    padding-bottom: $bottom-padding;
+}

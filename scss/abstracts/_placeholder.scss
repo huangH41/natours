@@ -1,0 +1,21 @@
+%main-text-color {
+    color: $color-grey-dark;
+}
+
+%main-white-bg {
+    background-color: $color-grey-light-1;
+}
+
+%section {
+    &-center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-horizontal-padding {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+

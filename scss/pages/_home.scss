@@ -42,13 +42,11 @@
 }
 
 .about {
-    background-color: $color-grey-light-1;
+    @extend %main-white-bg;
+    @extend %section-center-content;
+    @extend %section-horizontal-padding;
+    @include add-vertical-padding(20rem, 20rem);
     margin-top: -12rem;
-    padding: 20rem 8rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
     &__main {
         display: flex;
@@ -111,11 +109,14 @@
 }
 
 .benefit {
-    padding: 32rem 8rem;
+    @extend %section-horizontal-padding;
+    @include add-vertical-padding(32rem, 32rem);
     background-image: $bg-primary-color, url(../img/nat-4.jpg);
     background-position: center;
     background-size: cover;
     clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+    position: relative;
+    z-index: 1;
     transform: translateY(-17%);
 
     &__list {
@@ -126,4 +127,30 @@
             margin-right: $grid-gutter;
         }
     }
+}
+
+.tour {
+    @extend %main-white-bg;
+    @extend %section-center-content;
+    @extend %section-horizontal-padding;
+    @include add-vertical-padding(22rem, 22rem);
+    transform: translateY(-36rem);
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;       
+    }
+
+    &__price-tag{
+
+    }
+
+    &__price-label {
+
+    }
+
+    &__price {
+
+    }   
 }
