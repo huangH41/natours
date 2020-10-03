@@ -5,10 +5,8 @@
     &:visited {
         padding: 1.6rem 3.2rem;
         display: inline-block;
-        background-color: $color-grey-light-1;
         border-radius: 10rem;
 
-        color: $color-grey-dark;
         font-size: $regular-font-size;
         text-transform: uppercase;
         
@@ -16,33 +14,66 @@
         transition: all .4s;
     }
 
-    &:hover {
-        -webkit-transform: translateY(-8px);
-        transform: translateY(-8px);
+    &--primary {
+        background-color: $color-primary;
+        color: $color-white;
+    }
 
-        box-shadow: 0 8px 32px rgba(#000000, $alpha: .2);
+    &--white {
+        background-color: $color-grey-light-1;
+        color: $color-grey-dark;
+    }
 
-        &::before {
-            transform: scale(1.5);
-            opacity: 0;
+    &--animation {
+        &-primary{
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -10;
+        
+                width: 100%;
+                height: 100%;
+        
+                background-color: $color-primary;
+                border-radius: 10rem;
+        
+                transition: all .4s;
+            }
+        }
+
+        &-white {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -10;
+        
+                width: 100%;
+                height: 100%;
+        
+                background-color: $color-grey-light-1;
+                border-radius: 10rem;
+        
+                transition: all .4s;
+            }
+        }
+
+        &-primary:hover, &-white:hover {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+    
+            box-shadow: 0 8px 32px rgba(#000000, $alpha: .2);
+    
+            &::before {
+                transform: scale(1.5);
+                opacity: 0;
+            }
         }
     }
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -10;
-
-        width: 100%;
-        height: 100%;
-
-        background-color: $color-grey-light-1;
-        border-radius: 10rem;
-
-        transition: all .4s;
-    }
 }
 
 .link-button {
