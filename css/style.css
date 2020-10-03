@@ -146,6 +146,7 @@ a {
   padding: 2.5rem 3rem;
   border-radius: 4px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s;
   /* 
   this make the flex item grow occupy the same space with its sibling, combined with
   flex basis 0, it makes the flex item width is purely depend on flex grow result
@@ -166,6 +167,9 @@ a {
   text-align: center;
   line-height: 1.5;
   color: #999;
+}
+.simple-card:hover {
+  transform: scale(1.02) translateY(-4%);
 }
 
 .header {

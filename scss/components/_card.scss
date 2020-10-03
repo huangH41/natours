@@ -4,6 +4,7 @@
     padding: 2.5rem 3rem;
     border-radius: $border-rad-sm;
     box-shadow: $small-box-shadow;
+    transition: transform .4s;
 
     /* 
     this make the flex item grow occupy the same space with its sibling, combined with
@@ -26,5 +27,9 @@
         text-align: center;
         line-height: 1.5;
         color: $color-grey-dark-2;
+    }
+
+    &:hover {
+        transform: scale(1.02) translateY(-4%);
     }
 }
