@@ -63,19 +63,22 @@
     }
 
     &__right {
-        display: flex;
-        align-items: center;
         flex-basis: 50%;
     }
 
     &__img-box {
-        position: relative;
-        width: 100%;
-        height: 100%;
+        position: relative;        
+
+        &:hover > *:not(:hover) {
+            transform: scale(.9);
+        }
     }
 
     &__img {
         position: absolute;
+        outline: 0px solid $color-primary;
+        outline-offset: 12px;   
+        transition: all .2s;
 
         &--1,
         &--2,
@@ -94,9 +97,15 @@
         }
 
         &--3 {
-            left: 50%;
+            left: 25%;
             top: 10rem;
-            transform: translateX(-50%);
+        }
+
+        &:hover {
+            box-shadow: $strong-box-shadow;
+            outline-width: 12px;
+            transform: scale(1.1);
+            z-index: 10;
         }
     }
 }
