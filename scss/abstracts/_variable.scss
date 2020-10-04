@@ -23,6 +23,12 @@ $color-black: #000;
 $primary-gradient-color: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
 $bg-primary-color: linear-gradient(to bottom right, rgba($color-primary-light, .8), rgba($color-primary-dark, .8));
 
+$secondary-gradient-color: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark);
+$bg-secondary-color: linear-gradient(to bottom right, rgba($color-secondary-light, .8), rgba($color-secondary-dark, .8));
+
+$tertiary-gradient-color: linear-gradient(to bottom right, $color-tertiary-light, $color-tertiary-dark);
+$bg-tertiary-color: linear-gradient(to bottom right, rgba($color-tertiary-light, .8), rgba($color-tertiary-dark, .8));
+
 //FONT
 $regular-font-size: 1.6rem;
 

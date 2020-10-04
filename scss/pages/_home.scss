@@ -120,12 +120,9 @@
     transform: translateY(-17%);
 
     &__list {
+        @extend %add-gutter-width;
         display: flex;
         justify-content: space-between;
-
-        > *:not(:last-child) {
-            margin-right: $grid-gutter;
-        }
     }
 }
 
@@ -137,9 +134,10 @@
     transform: translateY(-36rem);
 
     &__list {
+        @extend %add-gutter-width;
         display: flex;
         justify-content: space-between;
-        width: 100%;       
+        width: 100%;
     }
 
     &__price-tag{

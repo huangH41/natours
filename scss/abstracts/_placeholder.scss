@@ -19,3 +19,9 @@
     }
 }
 
+%add-gutter-width {
+    > *:not(:last-child) {
+        margin-right: $grid-gutter;
+    }
+}
+

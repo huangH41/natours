@@ -1,5 +1,75 @@
 .card {
-    
+    background-color: $color-white;
+    flex: 1 0 0;
+
+    &__header {
+        height: 20rem;
+        position: relative;
+    }
+
+    &__header-content {
+        text-align: right;
+        width: 80%;
+        position: absolute;
+        bottom: 1.2rem;
+        right: 1.6rem;
+    }
+
+    &__header-image {
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: screen;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+
+        &--orange {
+            background-image: url($tour-easy-img), $secondary-gradient-color;
+        }
+
+        &--green {
+            background-image: url($tour-medium-img), $primary-gradient-color;
+        }
+
+        &--blue {
+            background-image: url($tour-hard-img), $tertiary-gradient-color;
+        }
+    }
+
+    &__header-image-caption {
+        font-size: 2.8rem;
+        font-weight: 300;
+        line-height: 1.75;
+        color: $color-white;
+        text-transform: uppercase;
+
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        padding: 1rem;
+
+        &--orange {
+            background-image: $bg-secondary-color;
+        }
+
+        &--green {
+            background-image: $bg-primary-color;
+        }
+
+        &--blue {
+            background-image: $bg-tertiary-color;
+        }
+    }
+
+    &__content-list {
+
+    }
+
+    &__front {
+
+    }
+
+    &__back {
+        display: none; //temporary
+    }
 }
 
 .simple-card {
