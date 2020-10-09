@@ -256,6 +256,10 @@ a {
   border-radius: 4px;
 }
 .card__back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   transform: rotateY(180deg);
   position: absolute;
   top: 0;
@@ -424,6 +428,24 @@ a {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+.tour__price-tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tour__price-label {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+.tour__price {
+  font-size: 5.6rem;
+  font-weight: 100;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

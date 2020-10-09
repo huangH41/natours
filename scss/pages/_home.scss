@@ -141,14 +141,25 @@
     }
 
     &__price-tag{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
+        // margin-bottom: 3.2rem;
     }
 
     &__price-label {
-
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color-white;
+        margin-bottom: 1.6rem;
     }
 
     &__price {
-
+        font-size: 5.6rem;
+        font-weight: 100;
+        color: $color-white;
     }   
 }
