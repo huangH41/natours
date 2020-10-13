@@ -117,7 +117,7 @@
     clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
     position: relative;
     z-index: 1;
-    transform: translateY(-17%);
+    margin-top: -20rem;
 
     &__list {
         @extend %add-gutter-width;
@@ -130,8 +130,8 @@
     @extend %main-white-bg;
     @extend %section-center-content;
     @extend %section-horizontal-padding;
-    @include add-vertical-padding(22rem, 22rem);
-    transform: translateY(-36rem);
+    @include add-vertical-padding(24rem, 12rem);
+    margin-top: -20rem;
 
     &__list {
         @extend %add-gutter-width;
@@ -145,8 +145,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        // margin-bottom: 3.2rem;
     }
 
     &__price-label {

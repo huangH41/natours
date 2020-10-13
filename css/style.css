@@ -412,7 +412,7 @@ a {
   clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
   position: relative;
   z-index: 1;
-  transform: translateY(-17%);
+  margin-top: -20rem;
 }
 .benefit__list {
   display: flex;
@@ -420,9 +420,9 @@ a {
 }
 
 .tour {
-  padding-top: 22rem;
-  padding-bottom: 22rem;
-  transform: translateY(-36rem);
+  padding-top: 24rem;
+  padding-bottom: 12rem;
+  margin-top: -20rem;
 }
 .tour__list {
   display: flex;
