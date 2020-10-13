@@ -161,3 +161,22 @@
         color: $color-white;
     }   
 }
+
+.story {
+    @extend %section-horizontal-padding;
+    @extend %section-center-content;
+    @include add-vertical-padding(16rem, 12rem);
+    position: relative;
+
+    &__video-bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .15;
+    }
+}

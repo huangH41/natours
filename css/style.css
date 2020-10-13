@@ -33,12 +33,12 @@ ORDER:
   background-color: #f7f7f7;
 }
 
-.tour, .about {
+.story, .tour, .about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.tour, .benefit, .about {
+.story, .tour, .benefit, .about {
   padding-left: 8rem;
   padding-right: 8rem;
 }
@@ -446,6 +446,22 @@ a {
   font-size: 5.6rem;
   font-weight: 100;
   color: #fff;
+}
+
+.story {
+  padding-top: 16rem;
+  padding-bottom: 12rem;
+  position: relative;
+}
+.story__video-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
 }
 
 /*# sourceMappingURL=style.css.map */
